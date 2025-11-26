@@ -47,7 +47,7 @@ Execute the script:
 
 python prime_number.py
 
-## Example output
+### Example output
 PS C:\Users\seyda\prime_number> python prime_number.py
 --- Prime Factor Calculator  ---
 Enter a positive number to factor (must be > 1, or 'q' to quit): 26541
@@ -60,4 +60,3 @@ Prime factor found: 3
 Prime factor found: 983
 It took 0.0000 seconds to calculate.
 INFO: Result saved to output file: 'prime_factors_output.txt'
------------------
