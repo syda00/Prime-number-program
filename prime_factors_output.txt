@@ -1,0 +1,4 @@
+--- Run at 2025-11-26 22:53:16 ---
+Prime Factors of number 26541 are
+3, 983
+It took 0.0000 seconds to calculate them
