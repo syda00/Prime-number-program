@@ -46,17 +46,3 @@ Navigate to the directory where prime_number.py is located using your terminal (
 Execute the script:
 
 python prime_number.py
-
-### Example output
-PS C:\Users\seyda\prime_number> python prime_number.py
---- Prime Factor Calculator  ---
-Enter a positive number to factor (must be > 1, or 'q' to quit): 26541
-INFO: Cache file 'prime_factors_cache.json' not found. Creating a new one.
-Calculating prime factors for 26541...
-INFO: Result saved to database for future fast access.
-
---- Results ---
-Prime factor found: 3
-Prime factor found: 983
-It took 0.0000 seconds to calculate.
-INFO: Result saved to output file: 'prime_factors_output.txt'
