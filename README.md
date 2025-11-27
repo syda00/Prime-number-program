@@ -37,18 +37,18 @@ The program uses a **file-based cache** to store previously computed results, so
 ##  Project Structure
 
 
-.
-├── prime_number.py               # Main script (logic, caching, and console UI)
-├── prime_factors_cache.json      # Cache file: number -> (factors, computation time)
-├── prime_factors_output.txt      # Log file: history of all runs
-└── Primenumbers.pdf              # Assignment / specification document
+- **[prime_number_program.py](prime_number_program.py):** Main script (logic, caching, and console UI)
+- **[prime_factors_cache.json](prime_factors_cache.json):** Cache file: number -> (factors, computation time)
+- **[prime_factors_output.txt](prime_factors_output.txt ):** Log file: history of all runs
+- **[Primenumbers.pdf](Primenumbers.pdf):** Assignment / specification document
+
 
 ##  Running the program 
 
 - Prerequisites: Python 3 installed
 
-In the directory containing prime_number.py, run:
-- python prime_number.py
+In the directory containing prime_number_program.py, run:
+- python prime_number_program.py
 
 ## AI Acknowledgment
 I used AI tools to accelerate development and improve code quality, while keeping full control over all architectural and implementation decisions.
