@@ -1,48 +1,60 @@
-### Prime Factor Calculator with File Caching
+# Prime Factor Calculator with File Caching
 
-This is a Python console application designed to calculate the unique prime factors of a positive integer. It implements a file-based caching mechanism to store and retrieve previously calculated results, significantly improving performance on repeated inputs.
+A simple but efficient Python console application for calculating the **unique prime factors** of a positive integer.  
 
-The application is structured to demonstrate robust error handling, efficient algorithms, and best practices in input validation and data persistence.
+The program uses a **file-based cache** to store previously computed results, so repeated inputs are returned almost instantly. It also logs every run to a text file for later inspection.
 
-### 🌟 Features
+---
 
-Efficient Prime Factorization: Uses an optimized trial division algorithm to quickly find unique prime factors.
+##  Features
 
-Persistent File Caching: Stores results in prime_factors_cache.json for rapid retrieval.
+- **Efficient prime factorization**  
+  Uses an optimized trial division algorithm to find **unique** prime factors of a given number.
 
-Cache Hit: Retrieves results instantly and measures the negligible lookup time.
+- **Persistent file caching**  
+  Results are stored in `prime_factors_cache.json` to speed up subsequent runs with the same input.
 
-Cache Miss: Calculates factors, measures the computation time, and saves the result to the cache.
+- **Cache hit / miss reporting**  
+  - **Cache hit**: Factors are loaded from the cache and lookup time is measured (typically negligible).  
+  - **Cache miss**: Factors are computed, time is measured, and the result is added to the cache.
 
-Graceful Exit: The user can exit the program at any time by typing 'q' or 'quit'.
+- **Graceful exit**  
+  The program can be exited at any time by entering `q` or `quit`.
 
-Output Logging: Appends the results of every run (factors found and duration) to prime_factors_output.txt.
+- **Output logging**  
+  Every run is appended to `prime_factors_output.txt`, including:
+  - the input number  
+  - the prime factors  
+  - the time taken to compute or retrieve them  
+  - whether it was a cache hit or miss (if implemented)
 
-Input Validation: Ensures the user enters a natural number greater than 1, asking them to retry if the input is invalid or less than or equal to 1.
+- **Robust input validation**  
+  Ensures that the user enters a **natural number greater than 1**.  
+  If the input is invalid (non-numeric, negative, 0, or 1), the user is asked to try again.
 
-### 📁 File Structure
+---
 
-The project primarily consists of one Python file and two data files it interacts with:
+##  Project Structure
 
 
-prime_number.py: The main script containing the factoring algorithm, caching logic, and user interface.
+.
+├── prime_number.py               # Main script (logic, caching, and console UI)
+├── prime_factors_cache.json      # Cache file: number -> (factors, computation time)
+├── prime_factors_output.txt      # Log file: history of all runs
+└── Primenumbers.pdf              # Assignment / specification document
 
-prime_factors_cache.json: The file used for persistence (database). Stores the factors and the original calculation time for fast lookups.
+##  Running the program 
 
-prime_factors_output.txt: The log file where every result (number, factors, time taken) is appended for history tracking.
+- Prerequisites: Python 3 installed
 
-Primenumbers.pdf: Assignment instructions
+In the directory containing prime_number.py, run:
+- python prime_number.py
 
-### 💻 How to Run the Program
+## AI Acknowledgment
+I used AI tools to accelerate development and improve code quality, while keeping full control over all architectural and implementation decisions.
 
-Prerequisites
+- Architecture (Gemini): Helped outline the initial structure and modular approach.
 
-You only need Python 3 installed on your system.
+. Quality Review (ChatGPT & GROK): Provided critical feedback on efficiency, error handling, and Pythonic improvements.
 
-Running the Script
-
-Navigate to the directory where prime_number.py is located using your terminal (e.g., PowerShell or Command Prompt).
-
-Execute the script:
-
-python prime_number.py
+This multi-step approach improved iteration speed, but all final design choices and code decisions were made by me.
